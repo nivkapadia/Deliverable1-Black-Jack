@@ -9,7 +9,7 @@ import ca.sheridancollege.project.starterCode.Player;
 
 /**
  *
- * @author nivkp
+ * @author nivkp JUNE 2024
  */
 public class BlackJackGame extends Game
 {

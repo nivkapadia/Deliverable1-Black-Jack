@@ -16,7 +16,8 @@ import java.util.ArrayList;
  * 
  * @Modifiedby Niv Kapadia
  */
-public abstract class Player {
+public abstract class Player 
+{
 
     private String name; //the unique name for this player
     private ArrayList<Cards> hand;
@@ -26,7 +27,8 @@ public abstract class Player {
      *
      * @param name the unique ID to assign to this player.
      */
-    public Player(String name) {
+    public Player(String name)
+    {
         this.name = name;
         this.hand = new ArrayList<>();
     }
@@ -34,7 +36,8 @@ public abstract class Player {
     /**
      * @return the player name
      */
-    public String getName() {
+    public String getName()
+    {
         return name;
     }
 
@@ -43,7 +46,8 @@ public abstract class Player {
      *
      * @param name the player name to set
      */
-    public void setName(String name) {
+    public void setName(String name) 
+    {
         this.name = name;
     }
     

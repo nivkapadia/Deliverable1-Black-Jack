@@ -9,7 +9,7 @@ import ca.sheridancollege.project.starterCode.Card;
 /**
  *
  * @author nivkp
- * @modifiedby kapadniv
+ * @modifiedby kapadniv JUNE 2024
  */
 public class Cards extends Card {
 

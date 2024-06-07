@@ -10,9 +10,10 @@ package ca.sheridancollege.project.starterCode;
  * game. Students wishing to add to the code should remember to add themselves as a modifier.
  *
  * @author dancye
- * @ModifiedBy kapadniv
+ * @ModifiedBy kapadniv JUNE 2024
  */
-public abstract class Card {
+public abstract class Card 
+{
     //default modifier for child classes
 
     /**

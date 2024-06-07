@@ -11,9 +11,10 @@ import java.util.ArrayList;
 
 /**
  *
- * @author nivkp
+ * @author nivkp JUNE 2024
  */
-public class Init_Black_Jack {
+public class Init_Black_Jack 
+{
     public static void main(String[] args)
     {
         BlackJackGame game = new BlackJackGame("Blackjack");

@@ -9,14 +9,16 @@ import java.util.Scanner;
 
 /**
  *
- * @author nivkp
+ * @author nivkp JUNE 2024
  */
-public class BlackJackPlayer extends Player {
+public class BlackJackPlayer extends Player 
+{
     
     Scanner in = new Scanner(System.in);
     private Object inp;
 
-    public BlackJackPlayer(String name) {
+    public BlackJackPlayer(String name) 
+    {
         super(name);
     }
     
@@ -40,7 +42,8 @@ public class BlackJackPlayer extends Player {
     }
     
     @Override
-    public void play() {
+    public void play() 
+    {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

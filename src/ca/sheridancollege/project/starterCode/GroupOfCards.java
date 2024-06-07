@@ -17,13 +17,15 @@ import java.util.Collections;
  * 
  * @modifiedBy kapadniv June 2024
  */
-public class GroupOfCards {
+public class GroupOfCards 
+{
 
     //The group of cards, stored in an ArrayList
     private ArrayList<Card> cards;
     private int size;//the size of the grouping
 
-    public GroupOfCards(int size) {
+    public GroupOfCards(int size)
+    {
         this.size = size;
     }
 
@@ -32,25 +34,29 @@ public class GroupOfCards {
      *
      * @return the group of cards.
      */
-    public ArrayList<Card> getCards() {
+    public ArrayList<Card> getCards() 
+    {
         return cards;
     }
 
-    public void shuffle() {
+    public void shuffle() 
+    {
         Collections.shuffle(cards);
     }
 
     /**
      * @return the size of the group of cards
      */
-    public int getSize() {
+    public int getSize()
+    {
         return size;
     }
 
     /**
      * @param size the max size for the group of cards
      */
-    public void setSize(int size) {
+    public void setSize(int size) 
+    {
         this.size = size;
     }
 

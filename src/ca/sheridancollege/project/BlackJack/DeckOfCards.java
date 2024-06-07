@@ -11,7 +11,8 @@ import java.util.Collections;
  *
  * @author nivkp JUNE 2024
  */
-public class DeckOfCards {
+public class DeckOfCards 
+{
     private ArrayList<Cards> deck;
     
     public DeckOfCards()
