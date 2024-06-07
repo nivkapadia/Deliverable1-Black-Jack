@@ -3,7 +3,7 @@
  * Students can modify and extend to implement their game.
  * Add your name as an author and the date!
  */
-package ca.sheridancollege.project;
+package ca.sheridancollege.project.starterCode;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -15,7 +15,7 @@ import java.util.Collections;
  * @author dancye
  * @author Paul Bonenfant Jan 2020
  * 
- * @modifiedBy kapadniv
+ * @modifiedBy kapadniv June 2024
  */
 public class GroupOfCards {
 
