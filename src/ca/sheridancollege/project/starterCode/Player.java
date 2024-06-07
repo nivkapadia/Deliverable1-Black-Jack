@@ -3,8 +3,9 @@
  * Students can modify and extend to implement their game.
  * Add your name as an author and the date!
  */
-package ca.sheridancollege.project;
+package ca.sheridancollege.project.starterCode;
 
+import ca.sheridancollege.project.BlackJack.Cards;
 import java.util.ArrayList;
 
 /**

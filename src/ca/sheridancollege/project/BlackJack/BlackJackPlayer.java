@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package ca.sheridancollege.project;
+package ca.sheridancollege.project.BlackJack;
 
+import ca.sheridancollege.project.starterCode.Player;
 import java.util.Scanner;
 
 /**
@@ -21,7 +22,7 @@ public class BlackJackPlayer extends Player {
     
     public boolean wantsToHit()
     {
-        System.out.print("Do you want to hit? (y or n)");
+        System.out.print(this.getName() + ", do you want to hit? (y or n)");
         do
         {
             inp = in.next();

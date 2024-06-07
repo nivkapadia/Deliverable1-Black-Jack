@@ -2,7 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package ca.sheridancollege.project;
+package ca.sheridancollege.project.BlackJack;
+
+import ca.sheridancollege.project.starterCode.Game;
+import ca.sheridancollege.project.starterCode.Player;
 
 /**
  *
@@ -43,12 +46,22 @@ public class BlackJackGame extends Game
         dealer.addCardToHand(deck.dealCard());
         
         System.out.println("Cards Dealt");
+        System.out.println("Dealer's first card: " + dealer.getHand().get(0));
+        
+        for(Player player: getPlayers())
+        {
+            System.out.println(player.getName()  + "'s Hand: " + player.getHand());
+        }
         
         for(Player player: getPlayers())
         {
             while(((BlackJackPlayer) player).wantsToHit())
             {
                 player.addCardToHand(deck.dealCard());
+                System.out.println("Card Dealt: " + player.getHand().get(player.
+                        getHand().size() - 1));
+                System.out.println(player.getName() + "'s Cards now: " + 
+                        player.getHand());
             }
         }
         
