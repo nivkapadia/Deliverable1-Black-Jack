@@ -1,0 +1,57 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package ca.sheridancollege.project;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+/**
+ *
+ * @author nivkp JUNE 2024
+ */
+public class DeckOfCards {
+    private ArrayList<Cards> deck;
+    
+    public DeckOfCards()
+    {
+        deck = new ArrayList<>();
+        init_deck();
+    }
+    
+    private void init_deck()
+    {
+        for(Cards.SUITS s: Cards.SUITS.values())
+        {
+            for (Cards.VALUES v: Cards.VALUES.values())
+            {
+                deck.add(new Cards(s, v));
+            }
+        }
+    }
+    
+    
+    public void shuffle()
+    {
+        Collections.shuffle(deck);
+    }
+    
+    public Cards dealCard()
+    {
+        if (deck.isEmpty())
+        {
+            return null;
+        }
+        else
+        {
+            return deck.remove(0);
+        }
+    }
+    
+    public int remainingCards()
+    {
+        return deck.size();
+    }
+}
+
