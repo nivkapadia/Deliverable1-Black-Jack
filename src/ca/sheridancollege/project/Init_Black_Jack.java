@@ -11,11 +11,15 @@ import java.util.ArrayList;
  * @author nivkp
  */
 public class Init_Black_Jack {
-    BlackJackGame game = new BlackJackGame("Blackjack");
-    ArrayList<Player> gamePlayers = new ArrayList<>();
-    gamePlayers.add(new Player("Player 1"));
-    gamePlayers.add(new Player("Player 2"));
+    public static void main(String[] args)
+    {
+        BlackJackGame game = new BlackJackGame("Blackjack");
+        ArrayList<Player> gamePlayers = new ArrayList<>();
     
-    game.setPlayers(gamePlayers);
-    game.play();
+        gamePlayers.add(new BlackJackPlayer("Player 1"));
+        gamePlayers.add(new BlackJackPlayer("Player 2"));
+    
+        game.setPlayers(gamePlayers);
+        game.play();
+    }
 }

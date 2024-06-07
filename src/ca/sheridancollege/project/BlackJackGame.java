@@ -23,8 +23,17 @@ public class BlackJackGame extends Game
     @Override
     public void play() 
     {
+        System.out.println("Shuffling deck...");
         deck.shuffle();
         
+        try {
+            // Adding a 2-second delay
+            Thread.sleep(2000);
+        } 
+        catch (InterruptedException e){}
+        System.out.println("Deck Shuffled");
+        
+        System.out.println("Dealing cards to each player.");
         for(Player player: getPlayers())
         {
             player.addCardToHand(deck.dealCard());
@@ -32,6 +41,8 @@ public class BlackJackGame extends Game
         }
         dealer.addCardToHand(deck.dealCard());
         dealer.addCardToHand(deck.dealCard());
+        
+        System.out.println("Cards Dealt");
         
         for(Player player: getPlayers())
         {
@@ -46,9 +57,7 @@ public class BlackJackGame extends Game
             dealer.addCardToHand(deck.dealCard());
         }
         
-        declareWinner();
-        
-        
+        declareWinner();  
     }
 
     @Override
