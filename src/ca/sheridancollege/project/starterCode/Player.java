@@ -94,10 +94,13 @@ public abstract class Player
                 case NINE: 
                     value += 9;
                     break;
-                case TEN:
-                    JACK: 
-                    QUEEN: 
-                    KING:
+                case JACK:
+                    value += 10;
+                    break;      
+                case QUEEN: 
+                    value += 10;
+                    break;
+                case KING:
                     value += 10;
                     break;
                 case ACE:
